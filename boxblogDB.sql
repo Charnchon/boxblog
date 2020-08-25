@@ -29,4 +29,4 @@ CREATE TABLE `Contents`(
     CONSTRAINT `user_idfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users`. `user_id`,
     CONSTRAINT `content_referencefk_2` FOREIGN KEY (`content_reference`) REFERENCES `Contents`. `content_id`
 ) ENGINE=InnoDB DEFAULT CHARSET utf8mb4;
-
+    
