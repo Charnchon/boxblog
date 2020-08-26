@@ -26,7 +26,7 @@ CREATE TABLE `Contents`(
     `content_status` VARCHAR(30),
     `content_type` VARCHAR(60),
     PRIMARY KEY (`content_id`),
-    CONSTRAINT `user_idfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users`. `user_id`,
-    CONSTRAINT `content_referencefk_2` FOREIGN KEY (`content_reference`) REFERENCES `Contents`. `content_id`
+    CONSTRAINT `user_idfk_1` FOREIGN KEY (`user_id`) REFERENCES `Users` (`user_id`),
+    CONSTRAINT `content_referencefk_2` FOREIGN KEY (`content_reference`) REFERENCES `Contents` (`content_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET utf8mb4;
     
